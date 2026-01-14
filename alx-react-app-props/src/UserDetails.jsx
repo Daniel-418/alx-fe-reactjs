@@ -1,4 +1,4 @@
-import UserContext from "./UserContext"
+import UserContext from "./components/UserContext"
 import { useContext } from "react"
 
 export default function UserDetails() {

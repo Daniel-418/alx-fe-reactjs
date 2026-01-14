@@ -6,7 +6,7 @@ import MainContent from './components/MainContent'
 import UserProfile from './components/UserProfile.jsx'
 import Counter from './components/Counter.jsx';
 import ProfilePage from './ProfilePage.jsx';
-import UserContext from './UserContext.js';
+import UserContext from './components/UserContext.js';
 
 function App() {
   const userData = {
