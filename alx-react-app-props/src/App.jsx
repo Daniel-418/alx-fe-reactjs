@@ -6,6 +6,7 @@ import MainContent from './components/MainContent'
 import UserProfile from './components/UserProfile.jsx'
 import Counter from './components/Counter.jsx';
 import ProfilePage from './ProfilePage.jsx';
+import UserContext from './UserContext.js';
 
 function App() {
   const userData = {
@@ -18,7 +19,10 @@ function App() {
       <MainContent />
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
       <Counter />
-      <ProfilePage userData={userData} />
+      <UserContext.Provider value={userData}>
+        <ProfilePage userData={userData} />
+      </UserContext.Provider>
+
       <Footer />
     </>
   );

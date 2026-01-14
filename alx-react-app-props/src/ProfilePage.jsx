@@ -1,10 +1,10 @@
 import UserInfo from "./UserInfo";
 
-export default function ProfilePage({ userData }) {
+export default function ProfilePage() {
   return (
     <div>
       <p>Profile page starts here</p>
-      <UserInfo userData={userData} />
+      <UserInfo />
     </div>
   )
 }
