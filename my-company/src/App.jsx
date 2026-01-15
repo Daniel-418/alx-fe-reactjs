@@ -17,7 +17,7 @@ function App() {
     </div>
   )
 }
-const router = createBrowserRouter(
+const Routes = createBrowserRouter(
   [
     {
       path: '/',
@@ -35,6 +35,6 @@ const router = createBrowserRouter(
 
 export default function Entrypoint() {
   return (
-    <RouterProvider router={router} />
+    <RouterProvider router={Routes} />
   )
 }
