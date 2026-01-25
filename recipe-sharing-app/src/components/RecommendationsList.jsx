@@ -5,7 +5,7 @@ export default function RecommendationsList() {
 
   return (
     <div>
-      {recommendations.len > 0 ? <h3>Recommendations</h3> : ''}
+      {recommendations.length > 0 ? <h3>Recommendations</h3> : ''}
       {recommendations.map(recipe => (
         <div key={recipe.id}>
           <h3>{recipe.title}</h3>
