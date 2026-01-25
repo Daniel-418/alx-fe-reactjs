@@ -6,8 +6,8 @@ import { useEffect } from "react";
 export default function RecipeList() {
   const recipes = useRecipeStore(state => state.filteredRecipes);
   const filterRecipes = useRecipeStore(state => state.filterRecipes);
-  console.log(recipes);
   useEffect(() => filterRecipes(), []);
+
   return (
     <div>
       <SearchBar />

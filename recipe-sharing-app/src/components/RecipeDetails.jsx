@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import DeleteRecipe from "./DeleteRecipeButton.jsx";
 import EditRecipeForm from "./EditRecipeForm";
 import useRecipeStore from "./recipeStore";
+import { AddFavoriteButton } from "./FavoritesList.jsx";
 
 export default function RecipeDetails() {
   const { recipeID } = useParams();
@@ -16,6 +17,7 @@ export default function RecipeDetails() {
       <p>{recipe.description}</p>
       <EditRecipeForm recipeID={Number(recipeID)} />
       <DeleteRecipe recipeID={Number(recipeID)} />
+      <AddFavoriteButton recipeID={Number(recipeID)} />
     </div>
   );
 };
