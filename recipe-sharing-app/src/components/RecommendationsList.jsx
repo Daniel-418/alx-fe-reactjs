@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import useRecipeStore from "./recipeStore";
 
 export default function RecommendationsList() {
   const recommendations = useRecipeStore(state => state.recommendations);
+  const generateRecommendations = useRecipeStore(state => state.generateRecommendations);
+
+  useEffect(() => { generateRecommendations() }, []);
 
   return (
     <div>
