@@ -20,7 +20,7 @@ export default function Search() {
       const data = await fetchUserData(username);
       setUserData(data);
     } catch (err) {
-      setError(err.message || "an unexpected errror occured");
+      setError("Looks like we cant find the user");
       setUserData(null);
     } finally {
       setIsLoading(false);
@@ -37,7 +37,7 @@ export default function Search() {
           value={username}
           placeholder="Enter username (not email)"
         />
-        <button type="submit">Submit</button>
+        <button type="submit">login</button>
       </form>
 
       <div style={{ marginTop: "20px" }}>
